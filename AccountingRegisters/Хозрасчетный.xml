@@ -178,11 +178,11 @@
 			</Resource>
 			<Resource uuid="1cc738c7-a00e-4848-808e-25186c825f10">
 				<Properties>
-					<Name>СуммаВаюта</Name>
+					<Name>СуммаВалюта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сумма ваюта</v8:content>
+							<v8:content>Сумма валюта</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -4,6 +4,9 @@
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаФорма" id="1">
 			<Title>
@@ -196,6 +199,7 @@
 															<v8:content>Группа основное</v8:content>
 														</v8:item>
 													</ToolTip>
+													<HorizontalStretch>false</HorizontalStretch>
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -283,15 +287,72 @@
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="57"/>
 															<ChildItems>
-																<InputField name="ДатаНачала" id="58">
-																	<DataPath>Объект.ДатаНачала</DataPath>
-																	<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="59"/>
-																	<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="60"/>
+																<InputField name="ПериодЗайма" id="75">
+																	<DataPath>ПериодЗайма</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Период</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ПериодЗаймаКонтекстноеМеню" id="76"/>
+																	<ExtendedTooltip name="ПериодЗаймаРасширеннаяПодсказка" id="77"/>
+																	<Events>
+																		<Event name="OnChange">ПериодЗаймаПриИзменении</Event>
+																	</Events>
 																</InputField>
-																<InputField name="ДатаОкончания" id="61">
-																	<DataPath>Объект.ДатаОкончания</DataPath>
-																	<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="62"/>
-																	<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="63"/>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаВалюта" id="86">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа валюта</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа валюта</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаВалютаРасширеннаяПодсказка" id="87"/>
+															<ChildItems>
+																<InputField name="Валюта" id="72">
+																	<DataPath>Объект.Валюта</DataPath>
+																	<ContextMenu name="ВалютаКонтекстноеМеню" id="73"/>
+																	<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="74"/>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаСчетаУчета" id="78">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа счета учета</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа счета учета</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаСчетаУчетаРасширеннаяПодсказка" id="79"/>
+															<ChildItems>
+																<InputField name="СчетУчета" id="80">
+																	<DataPath>Объект.СчетУчета</DataPath>
+																	<ContextMenu name="СчетУчетаКонтекстноеМеню" id="81"/>
+																	<ExtendedTooltip name="СчетУчетаРасширеннаяПодсказка" id="82"/>
+																</InputField>
+																<InputField name="СчетУчетаПроцентов" id="83">
+																	<DataPath>Объект.СчетУчетаПроцентов</DataPath>
+																	<ContextMenu name="СчетУчетаПроцентовКонтекстноеМеню" id="84"/>
+																	<ExtendedTooltip name="СчетУчетаПроцентовРасширеннаяПодсказка" id="85"/>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
@@ -317,11 +378,6 @@
 																	<ContextMenu name="СуммаКонтекстноеМеню" id="70"/>
 																	<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="71"/>
 																</InputField>
-																<InputField name="Валюта" id="72">
-																	<DataPath>Объект.Валюта</DataPath>
-																	<ContextMenu name="ВалютаКонтекстноеМеню" id="73"/>
-																	<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="74"/>
-																</InputField>
 																<InputField name="Процент" id="66">
 																	<DataPath>Объект.Процент</DataPath>
 																	<ContextMenu name="ПроцентКонтекстноеМеню" id="67"/>
@@ -344,6 +400,7 @@
 															<v8:content>Группа основное</v8:content>
 														</v8:item>
 													</ToolTip>
+													<HorizontalStretch>false</HorizontalStretch>
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -454,6 +511,17 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
+		</Attribute>
+		<Attribute name="ПериодЗайма" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период займа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>

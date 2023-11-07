@@ -213,12 +213,44 @@
 											<ContextMenu name="СуммаКонтекстноеМеню" id="50"/>
 											<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="51"/>
 										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаВалютаКурсКратность" id="68">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа валюта курс кратность</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа валюта курс кратность</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВалютаКурсКратностьРасширеннаяПодсказка" id="69"/>
+									<ChildItems>
 										<InputField name="Валюта" id="52">
 											<DataPath>Объект.Валюта</DataPath>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>8</MaxWidth>
 											<ContextMenu name="ВалютаКонтекстноеМеню" id="53"/>
 											<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="54"/>
+											<Events>
+												<Event name="OnChange">ВалютаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="Курс" id="70">
+											<DataPath>Объект.Курс</DataPath>
+											<ContextMenu name="КурсКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="72"/>
+										</InputField>
+										<InputField name="Кратность" id="73">
+											<DataPath>Объект.Кратность</DataPath>
+											<ContextMenu name="КратностьКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="КратностьРасширеннаяПодсказка" id="75"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -243,6 +275,9 @@
 											<DataPath>Объект.Субконто2</DataPath>
 											<ContextMenu name="Субконто2КонтекстноеМеню" id="61"/>
 											<ExtendedTooltip name="Субконто2РасширеннаяПодсказка" id="62"/>
+											<Events>
+												<Event name="OnChange">Субконто2ПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>

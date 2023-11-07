@@ -215,6 +215,9 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>КредитыЗаймы</Subsystem>
+			<Subsystem>Банк</Subsystem>
+			<Subsystem>НСИ</Subsystem>
 			<Constant>ВалютаРегламентированногоУчета</Constant>
 			<Catalog>Организации</Catalog>
 			<Catalog>Контрагенты</Catalog>
@@ -230,6 +233,7 @@
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>СтавкиРефинансирования</InformationRegister>
 			<InformationRegister>ПараметрыДоговораЗайма</InformationRegister>
+			<InformationRegister>ПараметрыДоговораЗаймаАгент</InformationRegister>
 			<ChartOfCharacteristicTypes>ВидыСубконто</ChartOfCharacteristicTypes>
 			<ChartOfAccounts>Хозрасчетный</ChartOfAccounts>
 			<AccountingRegister>Хозрасчетный</AccountingRegister>
