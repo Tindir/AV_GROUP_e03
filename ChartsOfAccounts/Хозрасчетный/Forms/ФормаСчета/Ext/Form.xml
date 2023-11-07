@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Порядок" id="7">
+			<DataPath>Объект.Order</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПорядокКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Родитель" id="10">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Вид" id="13">
+			<DataPath>Объект.Type</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="Забалансовый" id="16">
+			<DataPath>Объект.OffBalance</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗабалансовыйКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЗабалансовыйРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="Валютный" id="19">
+			<DataPath>Объект.Валютный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВалютныйКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ВалютныйРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<CheckBoxField name="НалоговыйУчет" id="22">
+			<DataPath>Объект.НалоговыйУчет</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НалоговыйУчетКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НалоговыйУчетРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<Table name="ВидыСубконто" id="25">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ExtDimensionTypes</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВидыСубконтоКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ВидыСубконтоКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ВидыСубконтоРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ВидыСубконтоСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>ВидыСубконто</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыСубконтоСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ВидыСубконтоСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВидыСубконтоСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>ВидыСубконто</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыСубконтоСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ВидыСубконтоСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВидыСубконтоУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ВидыСубконто</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыСубконтоУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ВидыСубконтоУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ВидыСубконтоВидСубконто" id="38">
+					<DataPath>Объект.ExtDimensionTypes.ExtDimensionType</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыСубконтоВидСубконтоКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ВидыСубконтоВидСубконтоРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<CheckBoxField name="ВидыСубконтоТолькоОбороты" id="41">
+					<DataPath>Объект.ExtDimensionTypes.TurnoversOnly</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВидыСубконтоТолькоОборотыКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ВидыСубконтоТолькоОборотыРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВидыСубконтоВалютный" id="44">
+					<DataPath>Объект.ExtDimensionTypes.Валютный</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВидыСубконтоВалютныйКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ВидыСубконтоВалютныйРасширеннаяПодсказка" id="46"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВидыСубконтоСуммовой" id="47">
+					<DataPath>Объект.ExtDimensionTypes.Суммовой</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВидыСубконтоСуммовойКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ВидыСубконтоСуммовойРасширеннаяПодсказка" id="49"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ChartOfAccountsObject.Хозрасчетный</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

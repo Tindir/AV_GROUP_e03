@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ChartOfAccountsPredefinedItems" version="2.15">
+	<Item id="f35ce601-51d8-437a-ab85-fabc0cd4354d">
+		<Name>РасчетныеСчета</Name>
+		<Code>51</Code>
+		<Description>Расчетные счета</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>51</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.БанковскиеСчета">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+	</Item>
+	<Item id="74c45696-459e-4a79-9786-d5168e12ee3e">
+		<Name>ВалютныеСчета</Name>
+		<Code>52</Code>
+		<Description>Валютные счета</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>52</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.БанковскиеСчета">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+	</Item>
+	<Item id="fc96f510-1d79-4e89-b99e-8c9e1eba07e8">
+		<Name>РасчетыСПоставщикамиИПодрядчиками</Name>
+		<Code>60</Code>
+		<Description>Расчеты с поставщиками и подрядчикам</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>60</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="45b62001-88e1-475e-b3af-07b69ad4bfd5">
+		<Name>РасчетыПоКраткосрочнымКредитамИЗаймам</Name>
+		<Code>66</Code>
+		<Description>Расчеты по краткосрочным кредитам и займам</Description>
+		<AccountType>Passive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>66</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+		<ChildItems>
+			<Item id="19ebbdf6-1e7c-4d36-81ad-a1a432699738">
+				<Name>КраткосрочныеЗаймы</Name>
+				<Code>66.03</Code>
+				<Description>Краткосрочные займы</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>66.03</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Контрагенты">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.ДоговорЗайма">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="0ff7b979-8b28-49f2-acf0-94c950f7d895">
+				<Name>ПроцентыПоКраткосрочнымЗаймам</Name>
+				<Code>66.04</Code>
+				<Description>Проценты по краткосрочным займам</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>66.04</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Контрагенты">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.ДоговорЗайма">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="ecfd4172-36c9-4215-83a3-41e8b94d7788">
+				<Name>КраткосрочныеЗаймыВал</Name>
+				<Code>66.23</Code>
+				<Description>Краткосрочные займы (вал)</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>66.23</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Контрагенты">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.ДоговорЗайма">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="4ec603b8-3d33-4a24-890e-e5204b76b7a3">
+				<Name>ПроцентыПоКраткосрочнымЗаймамВал</Name>
+				<Code>66.24</Code>
+				<Description>Проценты по краткосрочным займам вал</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order>66.24</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Контрагенты">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.ДоговорЗайма">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="6613a478-eb70-43b3-97cf-19cd0db80917">
+		<Name>РасчетыСПокупателямиИЗаказчиками</Name>
+		<Code>62</Code>
+		<Description>Расчеты с покупателями и заказчиками</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>60</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+</PredefinedData>
