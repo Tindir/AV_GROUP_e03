@@ -227,9 +227,9 @@
 			<Catalog>СтавкаРефинансирования</Catalog>
 			<Catalog>Субконто</Catalog>
 			<Document>ДоговорЗайма</Document>
+			<Document>ЗакрытиеДоговораЗайма</Document>
 			<Document>ПоступлениеНаРасчетныйСчет</Document>
 			<Document>СписаниеСРасчетногоСчета</Document>
-			<Document>ЗакрытиеДоговораЗайма</Document>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>СтавкиРефинансирования</InformationRegister>
 			<InformationRegister>ПараметрыДоговораЗайма</InformationRegister>

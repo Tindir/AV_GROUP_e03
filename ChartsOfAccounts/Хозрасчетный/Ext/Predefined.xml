@@ -1,5 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ChartOfAccountsPredefinedItems" version="2.15">
+	<Item id="c1307931-679c-4cb7-928b-f2ae9cef72cb">
+		<Name>ПрочиеРасходы</Name>
+		<Code>91.01</Code>
+		<Description>Прочие расходы</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
 	<Item id="f35ce601-51d8-437a-ab85-fabc0cd4354d">
 		<Name>РасчетныеСчета</Name>
 		<Code>51</Code>
@@ -46,6 +59,19 @@
 		<Name>РасчетыСПоставщикамиИПодрядчиками</Name>
 		<Code>60</Code>
 		<Description>Расчеты с поставщиками и подрядчикам</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order>60</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="6613a478-eb70-43b3-97cf-19cd0db80917">
+		<Name>РасчетыСПокупателямиИЗаказчиками</Name>
+		<Code>62</Code>
+		<Description>Расчеты с покупателями и заказчиками</Description>
 		<AccountType>ActivePassive</AccountType>
 		<OffBalance>false</OffBalance>
 		<Order>60</Order>
@@ -181,18 +207,5 @@
 				</ExtDimensionTypes>
 			</Item>
 		</ChildItems>
-	</Item>
-	<Item id="6613a478-eb70-43b3-97cf-19cd0db80917">
-		<Name>РасчетыСПокупателямиИЗаказчиками</Name>
-		<Code>62</Code>
-		<Description>Расчеты с покупателями и заказчиками</Description>
-		<AccountType>ActivePassive</AccountType>
-		<OffBalance>false</OffBalance>
-		<Order>60</Order>
-		<AccountingFlags>
-			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
-			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
-		</AccountingFlags>
-		<ExtDimensionTypes/>
 	</Item>
 </PredefinedData>
