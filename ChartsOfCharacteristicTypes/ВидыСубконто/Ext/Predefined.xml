@@ -36,4 +36,13 @@
 		</Type>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="4bdd1f72-51a4-4798-94b2-56b0519c1b9d">
+		<Name>ПрочиеДоходыРасходы</Name>
+		<Code>000000005</Code>
+		<Description>Прочие доходы расходы</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПрочиеДоходыИРасходы</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>

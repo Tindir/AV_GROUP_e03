@@ -45,7 +45,7 @@
 			<ChartOfAccounts>ChartOfAccounts.Хозрасчетный</ChartOfAccounts>
 			<Correspondence>true</Correspondence>
 			<PeriodAdjustmentLength>0</PeriodAdjustmentLength>
-			<DefaultListForm/>
+			<DefaultListForm>AccountingRegister.Хозрасчетный.Form.ФормаСписка</DefaultListForm>
 			<AuxiliaryListForm/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<EnableTotalsSplitting>true</EnableTotalsSplitting>
@@ -262,6 +262,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</AccountingRegister>
 </MetaDataObject>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.15">
+	<Item id="729899da-75a9-4ae5-a9b9-89e602f6f947">
+		<Name>Внереализационные</Name>
+		<Code>000000002</Code>
+		<Description>Внереализационные</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b76a4e05-97b8-48bf-8d75-cc23e6c475d1">
+		<Name>ПроцентыКПолучениюУплате</Name>
+		<Code>000000001</Code>
+		<Description>Проценты к получению упла</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

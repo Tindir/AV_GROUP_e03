@@ -1,22 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.15">
 	<ConfigVersions>
-		<Metadata name="AccountingRegister.Хозрасчетный" id="b93df5e5-0e98-4a5e-9575-346cd2d2ec25" configVersion="1eb6f16733864e4cb7f05a402b44724000000000">
+		<Metadata name="AccountingRegister.Хозрасчетный" id="b93df5e5-0e98-4a5e-9575-346cd2d2ec25" configVersion="1d371ffb1563f9419947b9ee668f334c00000000">
 			<Metadata name="AccountingRegister.Хозрасчетный.Resource.СуммаВалюта" id="1cc738c7-a00e-4848-808e-25186c825f10"/>
 			<Metadata name="AccountingRegister.Хозрасчетный.Resource.Сумма" id="33198454-b47b-4225-8171-d46e047a43b7"/>
 			<Metadata name="AccountingRegister.Хозрасчетный.Resource.СуммаНУ" id="67eb279d-54cf-470f-9fbd-1a2990515b1b"/>
 			<Metadata name="AccountingRegister.Хозрасчетный.Dimension.Организация" id="83d11718-524e-471b-932f-113946e4fdfe"/>
 			<Metadata name="AccountingRegister.Хозрасчетный.Dimension.Валюта" id="c1703605-7721-4ad7-8d02-ea2b293b544e"/>
 		</Metadata>
+		<Metadata name="AccountingRegister.Хозрасчетный.Form.ФормаСписка" id="25163f9a-75b2-465d-91a3-f5cab7f36914" configVersion="e2affd2e92a8a446928bf9fb717bdc6b00000000"/>
+		<Metadata name="AccountingRegister.Хозрасчетный.Form.ФормаСписка.Form" id="25163f9a-75b2-465d-91a3-f5cab7f36914.0" configVersion="80f75636c13c404c871e5e5a74b4fb6900000000"/>
 		<Metadata name="Catalog.БанковскиеСчета" id="b876e4ba-5919-4f96-9a97-9251065714ef" configVersion="195e80545b1cc44d9bd6e1df0651471600000000"/>
 		<Metadata name="Catalog.Валюты" id="5c9567e5-df5a-444d-b8c2-317587606428" configVersion="49fedb82989ea44284d7a11c82bd449500000000"/>
 		<Metadata name="Catalog.Валюты.Predefined" id="5c9567e5-df5a-444d-b8c2-317587606428.1c" configVersion="1590f46090d0d645b6f33706121ff18d00000000"/>
 		<Metadata name="Catalog.ДоговорыКонтрагентов" id="2d3ec816-cc8c-45cb-b657-e90c4444df22" configVersion="d807f426f601bb4d8f160f0676edf30a00000000"/>
 		<Metadata name="Catalog.Контрагенты" id="b40e888d-65d8-4f88-ad2b-b4af1319a5ef" configVersion="fa4014fd9e26b849ab7688ad94eda00500000000"/>
 		<Metadata name="Catalog.Организации" id="31d769a8-d4ac-4a25-9b64-e7ab1b07e02a" configVersion="1fc7e7e256b12b43b8bd7afce11c1f4f00000000"/>
+		<Metadata name="Catalog.ПрочиеДоходыИРасходы" id="cbfca472-9202-4046-a025-ed6145e13fa3" configVersion="092ab739fd9e4942ac28214e911de64f00000000"/>
+		<Metadata name="Catalog.ПрочиеДоходыИРасходы.Predefined" id="cbfca472-9202-4046-a025-ed6145e13fa3.1c" configVersion="d1f613c16ca6f94fa1e612f78f2afd8500000000"/>
 		<Metadata name="Catalog.СтавкаРефинансирования" id="f9cc8781-bf11-4231-a031-e8acf9f86020" configVersion="e18da93e7a9ad64d9c88fd2a4eea829e00000000"/>
 		<Metadata name="Catalog.Субконто" id="fe5effc7-42de-49d1-919f-42cc365e079b" configVersion="a5f1b12b6e13e748b9eaa7a16efa52e600000000"/>
-		<Metadata name="ChartOfAccounts.Хозрасчетный" id="c53cac76-c5b5-49e8-9e77-e5715196b11d" configVersion="8b7f998e08e0a642a3ffd58a8ce2122200000000">
+		<Metadata name="ChartOfAccounts.Хозрасчетный" id="c53cac76-c5b5-49e8-9e77-e5715196b11d" configVersion="9bee64b9b33ed54cacc015c11b03edf600000000">
 			<Metadata name="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой" id="17dff33e-5041-4c14-a9b3-5fa21abe4ca5"/>
 			<Metadata name="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет" id="3afd8ff9-f7d7-4d67-9002-468288c92e7a"/>
 			<Metadata name="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный" id="4f72aabf-0024-43ad-be6c-479d22634884"/>
@@ -24,14 +28,14 @@
 		</Metadata>
 		<Metadata name="ChartOfAccounts.Хозрасчетный.Form.ФормаСчета" id="f5ad9078-e638-43e9-9b98-08f9dc8bac4a" configVersion="826e60c022582b44844e66c73ef4d1f100000000"/>
 		<Metadata name="ChartOfAccounts.Хозрасчетный.Form.ФормаСчета.Form" id="f5ad9078-e638-43e9-9b98-08f9dc8bac4a.0" configVersion="c101bc210f5a3e448e9663b03ebe227500000000"/>
-		<Metadata name="ChartOfAccounts.Хозрасчетный.Predefined" id="c53cac76-c5b5-49e8-9e77-e5715196b11d.9" configVersion="c5f9d69a2131fc4cb71e9fad5d8cceae00000000"/>
-		<Metadata name="ChartOfCharacteristicTypes.ВидыСубконто" id="22479c8a-0262-4b97-a478-570df1b39208" configVersion="dcba35af1e254a4392656de884b055ab00000000"/>
-		<Metadata name="ChartOfCharacteristicTypes.ВидыСубконто.Predefined" id="22479c8a-0262-4b97-a478-570df1b39208.7" configVersion="724b50ffec9ff64daabadce128fec60800000000"/>
-		<Metadata name="Configuration.Конфигурация" id="70543237-50e2-4683-a6ee-42a7d4659d00" configVersion="5eac8dc95599df43adac3877efb3245600000000"/>
+		<Metadata name="ChartOfAccounts.Хозрасчетный.Predefined" id="c53cac76-c5b5-49e8-9e77-e5715196b11d.9" configVersion="146e0d115fdc6843937feb5c2bcbb15c00000000"/>
+		<Metadata name="ChartOfCharacteristicTypes.ВидыСубконто" id="22479c8a-0262-4b97-a478-570df1b39208" configVersion="a6265e26fe46dd4fac3846d4f588294500000000"/>
+		<Metadata name="ChartOfCharacteristicTypes.ВидыСубконто.Predefined" id="22479c8a-0262-4b97-a478-570df1b39208.7" configVersion="3043e11c8f33a744a6283736bd83ff0e00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="70543237-50e2-4683-a6ee-42a7d4659d00" configVersion="6a03187c2515c6468bdbd2a9782102e200000000"/>
 		<Metadata name="Constant.ВалютаРегламентированногоУчета" id="0b1e46d8-a85d-44c6-b9e7-d3873589253b" configVersion="6943d0540ce12f44bf9040e6eb23ee2300000000"/>
 		<Metadata name="Constant.ВалютаРегламентированногоУчета.ManagerModule" id="0b1e46d8-a85d-44c6-b9e7-d3873589253b.1" configVersion="cc0e375c48e5a446803377980c40282600000000"/>
 		<Metadata name="Constant.ВалютаРегламентированногоУчета.ValueManagerModule" id="0b1e46d8-a85d-44c6-b9e7-d3873589253b.0" configVersion="34748038f638a94a86bef7a0894ff50d00000000"/>
-		<Metadata name="Document.ДоговорЗайма" id="74bb43e5-5011-4c19-9aed-9a189b973cd1" configVersion="d289bfbcd1d2d246a83cda005b2f5a3900000000">
+		<Metadata name="Document.ДоговорЗайма" id="74bb43e5-5011-4c19-9aed-9a189b973cd1" configVersion="1c7837bfe58b0a4aaebdad7f5b7a266200000000">
 			<Metadata name="Document.ДоговорЗайма.Attribute.Агент" id="01f7d70c-4d2b-4b2d-9d49-558a91d25620"/>
 			<Metadata name="Document.ДоговорЗайма.Attribute.Организация" id="7d208efc-5412-4ac1-b8b2-521fa2ba4501"/>
 			<Metadata name="Document.ДоговорЗайма.Attribute.Валюта" id="8756b6c8-89ee-4505-bc83-106df863b4f3"/>
@@ -48,9 +52,9 @@
 		<Metadata name="Document.ДоговорЗайма.Form.ФормаДокумента.Form" id="d56a6db9-9d17-4b6c-ad3d-241ef908f320.0" configVersion="2a8c51280d331747a6b8d979c9fcfcb800000000"/>
 		<Metadata name="Document.ДоговорЗайма.Form.ФормаСписка" id="8ff5b57d-0852-42bd-8918-3faeb789cbee" configVersion="e6ef820c8337a14b8c4f7683791080aa00000000"/>
 		<Metadata name="Document.ДоговорЗайма.Form.ФормаСписка.Form" id="8ff5b57d-0852-42bd-8918-3faeb789cbee.0" configVersion="b3697a83c9723b459ba4ea21f6bb593700000000"/>
-		<Metadata name="Document.ДоговорЗайма.ManagerModule" id="74bb43e5-5011-4c19-9aed-9a189b973cd1.2" configVersion="39483c1928758544acc83a505b440d6400000000"/>
+		<Metadata name="Document.ДоговорЗайма.ManagerModule" id="74bb43e5-5011-4c19-9aed-9a189b973cd1.2" configVersion="5456c0e4aaa16548b3d60ad10d6ecef800000000"/>
 		<Metadata name="Document.ДоговорЗайма.ObjectModule" id="74bb43e5-5011-4c19-9aed-9a189b973cd1.0" configVersion="a428494746c4da43a00368346a489d9500000000"/>
-		<Metadata name="Document.ЗакрытиеДоговораЗайма" id="d64923e6-63ee-47f8-8482-467245508a7c" configVersion="6f3b79a350b79b47bc250974a5df433400000000">
+		<Metadata name="Document.ЗакрытиеДоговораЗайма" id="d64923e6-63ee-47f8-8482-467245508a7c" configVersion="270c063e402a4449af03133d62c81d7c00000000">
 			<Metadata name="Document.ЗакрытиеДоговораЗайма.TabularSection.ДанныеРасчета.Attribute.Сумма" id="2169cf65-4f2d-463d-8abe-66db4920b89f"/>
 			<Metadata name="Document.ЗакрытиеДоговораЗайма.Attribute.ДокументОснование" id="4645339e-7c40-4e3e-b4da-20fc595cb160"/>
 			<Metadata name="Document.ЗакрытиеДоговораЗайма.Attribute.СуммаПроцента" id="4722e919-ef41-4b07-9a35-9956a5b3c61c"/>
@@ -62,7 +66,7 @@
 		</Metadata>
 		<Metadata name="Document.ЗакрытиеДоговораЗайма.Form.ФормаДокумента" id="13a8052d-084a-4878-9607-e15840773830" configVersion="33698b4ea0cdfa40a76eb1891ee10b8d00000000"/>
 		<Metadata name="Document.ЗакрытиеДоговораЗайма.Form.ФормаДокумента.Form" id="13a8052d-084a-4878-9607-e15840773830.0" configVersion="4f80a5dd65d47241a22c36f1720a908400000000"/>
-		<Metadata name="Document.ЗакрытиеДоговораЗайма.ObjectModule" id="d64923e6-63ee-47f8-8482-467245508a7c.0" configVersion="193b88df4f08924fbacb20b7ca4611b300000000"/>
+		<Metadata name="Document.ЗакрытиеДоговораЗайма.ObjectModule" id="d64923e6-63ee-47f8-8482-467245508a7c.0" configVersion="cbde90337529d84097352caf9056740000000000"/>
 		<Metadata name="Document.ПоступлениеНаРасчетныйСчет" id="8b19f4ba-058e-4ef6-b10a-6bf6ad995be8" configVersion="5aba0b993890e0428606b17b08c1bc7000000000">
 			<Metadata name="Document.ПоступлениеНаРасчетныйСчет.Attribute.Кратность" id="06169d31-d66d-4ea6-9893-ca3aeff1ccd2"/>
 			<Metadata name="Document.ПоступлениеНаРасчетныйСчет.Attribute.Организация" id="1a3f3cc8-cccf-4b35-83df-315a157fe8b7"/>
@@ -79,7 +83,7 @@
 		<Metadata name="Document.ПоступлениеНаРасчетныйСчет.Form.ФормаДокумента" id="276a11e3-1db6-4658-8d32-24c6961f949e" configVersion="dd0900698ac87d41810146fdfd85690e00000000"/>
 		<Metadata name="Document.ПоступлениеНаРасчетныйСчет.Form.ФормаДокумента.Form" id="276a11e3-1db6-4658-8d32-24c6961f949e.0" configVersion="4a034d9ad3946a4c8c7210de1235e57100000000"/>
 		<Metadata name="Document.ПоступлениеНаРасчетныйСчет.ObjectModule" id="8b19f4ba-058e-4ef6-b10a-6bf6ad995be8.0" configVersion="8e07cf5dff7b2148a357137dccea13e600000000"/>
-		<Metadata name="Document.СписаниеСРасчетногоСчета" id="84df5a96-f6eb-4e39-9624-876dbb4adfa5" configVersion="63a0a498b404d94984dd57b0c6d8e53700000000">
+		<Metadata name="Document.СписаниеСРасчетногоСчета" id="84df5a96-f6eb-4e39-9624-876dbb4adfa5" configVersion="99e5330a79ffdb4faf1150521e3cd33d00000000">
 			<Metadata name="Document.СписаниеСРасчетногоСчета.Attribute.СчетКонтрагента" id="0246d563-e6c9-40d1-b68c-22bdfaaaea5c"/>
 			<Metadata name="Document.СписаниеСРасчетногоСчета.Attribute.Курс" id="09bd7b74-dcae-49b1-8a0c-e509206b7e3d"/>
 			<Metadata name="Document.СписаниеСРасчетногоСчета.Attribute.Сумма" id="171a2f3c-d7c9-445c-ba7d-f59b757e19d8"/>
@@ -95,7 +99,7 @@
 		</Metadata>
 		<Metadata name="Document.СписаниеСРасчетногоСчета.Form.ФормаДокумента" id="bc94b1c5-caa2-43d3-95e4-3e7b50811eed" configVersion="7ec3a24dae413a4d95144d46e2f33c9e00000000"/>
 		<Metadata name="Document.СписаниеСРасчетногоСчета.Form.ФормаДокумента.Form" id="bc94b1c5-caa2-43d3-95e4-3e7b50811eed.0" configVersion="dcf3a6e22a92d24caec1ce14817a231a00000000"/>
-		<Metadata name="Document.СписаниеСРасчетногоСчета.ObjectModule" id="84df5a96-f6eb-4e39-9624-876dbb4adfa5.0" configVersion="031a37398f82b248a9a155a92c2b83f600000000"/>
+		<Metadata name="Document.СписаниеСРасчетногоСчета.ObjectModule" id="84df5a96-f6eb-4e39-9624-876dbb4adfa5.0" configVersion="2007c78baf3d3347acf2386da03ec31600000000"/>
 		<Metadata name="InformationRegister.КурсыВалют" id="4c6521e8-6589-4d84-8011-1e034159818f" configVersion="83b2119c89dc7a4ca6bb32202ab16d0600000000">
 			<Metadata name="InformationRegister.КурсыВалют.Resource.Значение" id="102f606c-fb89-46c7-af72-c096e3804d12"/>
 			<Metadata name="InformationRegister.КурсыВалют.Resource.Кратность" id="29bcd7d1-3a49-4ee2-a0ee-05c1b317edfe"/>
@@ -126,14 +130,15 @@
 			<Metadata name="InformationRegister.ПараметрыДоговораЗаймаАгент.Resource.Процент" id="ddb2a81e-ee2a-4871-8049-09f93b2c77f8"/>
 			<Metadata name="InformationRegister.ПараметрыДоговораЗаймаАгент.Resource.Валюта" id="eb56a3d8-6520-446d-b208-852e8b35c9cb"/>
 		</Metadata>
-		<Metadata name="InformationRegister.СтавкиРефинансирования" id="e733e9a2-c563-476b-bafe-7215c2110d58" configVersion="9ad19e267b91b94f8d4e061e96f7d95500000000">
+		<Metadata name="InformationRegister.СтавкиРефинансирования" id="e733e9a2-c563-476b-bafe-7215c2110d58" configVersion="af73360c8f69fd4bbf0f4e64fc435fdc00000000">
 			<Metadata name="InformationRegister.СтавкиРефинансирования.Dimension.СтавкаРефинансирования" id="5b6d929b-f7e7-4399-b8d6-53ebd36313ea"/>
 			<Metadata name="InformationRegister.СтавкиРефинансирования.Resource.Значение" id="b94f7375-c483-4e55-80b7-21ce8b269b2d"/>
 		</Metadata>
+		<Metadata name="InformationRegister.СтавкиРефинансирования.ManagerModule" id="e733e9a2-c563-476b-bafe-7215c2110d58.2" configVersion="9e417564d18e8f4fa20396928339e88600000000"/>
 		<Metadata name="Language.Русский" id="1c4bc58f-8601-4eae-8022-1cc80554e5f9" configVersion="28456705853efb44b25ca1b0351018c200000000"/>
 		<Metadata name="Subsystem.Банк" id="533e0a33-4f4e-4ff1-9e63-a2154ab9301f" configVersion="d62854e341fbbf4ca769fc366a445b2200000000"/>
 		<Metadata name="Subsystem.КредитыЗаймы" id="017d657e-c273-4fe5-bff3-a8882d6299a5" configVersion="a7c40c820bb99247b7793cf82eedfa9300000000"/>
 		<Metadata name="Subsystem.КредитыЗаймы.CommandInterface" id="017d657e-c273-4fe5-bff3-a8882d6299a5.1" configVersion="31e1f80ed1ce3a47a660b0d4a88e82f900000000"/>
-		<Metadata name="Subsystem.НСИ" id="e2f086a5-21ae-49c5-b571-b54b9d9263bc" configVersion="0cf6e46ddeece2479766396a373b53f000000000"/>
+		<Metadata name="Subsystem.НСИ" id="e2f086a5-21ae-49c5-b571-b54b9d9263bc" configVersion="7022186a47c57649a26ec11e345b4f4200000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

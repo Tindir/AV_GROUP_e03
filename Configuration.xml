@@ -226,6 +226,7 @@
 			<Catalog>БанковскиеСчета</Catalog>
 			<Catalog>СтавкаРефинансирования</Catalog>
 			<Catalog>Субконто</Catalog>
+			<Catalog>ПрочиеДоходыИРасходы</Catalog>
 			<Document>ДоговорЗайма</Document>
 			<Document>ЗакрытиеДоговораЗайма</Document>
 			<Document>ПоступлениеНаРасчетныйСчет</Document>
